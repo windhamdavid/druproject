@@ -1,8 +1,19 @@
-; $Id$
 name = ndpc
 description = Tableless, recolorable, multi-column, fluid width theme (based on Garland).
+
 version = VERSION
 core = 6.x
 engine = phptemplate
+screenshot = img/screenshot.png
+
 stylesheets[all][] = style.css
+stylesheets[all][] = grid.css
 stylesheets[print][] = print.css
+
+scripts[] = js/init.js
+
+regions[left] = Left sidebar
+regions[right] = Right sidebar
+regions[content] = Content
+regions[header] = Header
+regions[footer] = Footer

@@ -1,5 +1,5 @@
 ; $Id$
-name = ndpc
+name = ndpc_garland
 description = Tableless, recolorable, multi-column, fluid width theme (based on Garland).
 version = VERSION
 core = 6.x
