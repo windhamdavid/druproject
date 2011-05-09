@@ -1,0 +1,697 @@
+h1, h2, h3, h4, h5, h6 {
+  color:#5e5ea6;
+}
+h1 {
+  font-size: 160%;
+  line-height: 130%;
+  font-weight: normal;  
+}
+
+h2 {
+  font-size: 140%;
+  font-weight: bold;     
+}
+
+h3 {
+  font-size: 130%;
+  font-weight: bold;    
+}
+
+h4 {
+  font-size: 120%;
+  font-weight: bold;    
+}
+
+h5 {
+  font-size: 120%;
+  font-weight: normal;      
+}
+
+h6 {
+  font-size: 120%;
+  font-weight: normal;   
+}
+
+thead th {
+  border: 0;
+}
+tbody {
+  border: 0;
+}
+
+.print_html {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: .9em;
+  font-weight: normal;
+}
+
+#ddblock-3 {
+  width:730px; 
+  margin-left: auto; 
+  margin-right: auto;
+}
+
+#ddblock-6 {
+  width:730px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.publishedStatusYes {
+  color: green;
+  font-weight: bold;
+} 
+
+.publishedStatusNo {
+  color: red;
+  font-weight: bold;
+} 
+
+/*********** Taxonomy Super Select ***************************/
+/*************************************************************/
+
+.taxonomy-super-select-checkboxes .form-item label.option {
+  float: left;
+  width: 50%;
+}
+
+.taxonomy-super-select-checkboxes .form-item .description {
+  clear: both;
+}
+
+/*********** BEF and Webform stuff ***************************/
+/*************************************************************/
+
+.bef-checkboxes, .webform-component-checkboxes .form-checkboxes {
+  /*
+   * Setting the height and overflow creates a scrollable <div> for the radio/checkbox elements.
+   * The border is just for looks -- adjust or remove as needed.
+   */
+  height: 150px;
+  width: 300px;
+  overflow: auto;
+  border: 1px solid #5e5ea6;
+}
+
+/* Line up multi-line options nicely */
+/*
+.bef-group-items .form-item,
+.bef-select-as-radios .form-radios .form-item {
+  text-indent: -24px;
+  margin-left: 24px;
+}
+*/
+/*********** mortendk code ***********************************/
+/*************************************************************/
+
+legend{margin: 3px 0 0 0;  display:block; padding:0;}
+/* fieldset{border: none;} */
+fieldset div{margin-left:10px; margin-right:10px; }
+fieldset fieldset{padding-left:1em; padding-right:1em; background:url(/sites/default/files/color/ndpc_garland-e2a849c9/gradient-inner.png) repeat-x 0 0;}
+html.js fieldset.collapsible,
+fieldset
+{
+  margin:0 0 10px 0;
+  padding:20px 0 10px 0;   
+  width:100%; /* width:95%;  ie7 screws with the with in */
+  background:url(/sites/default/files/color/ndpc_garland-e2a849c9/gradient-inner.png) repeat-x 0 0; display:block; position: relative; top:0px; left:0;
+}
+
+/* html.js fieldset.collapsible legend span{width:98%;} */
+html.js fieldset.collapsible legend a span,
+html.js fieldset.collapsible legend span,
+html fieldset legend span
+{
+  height:20px;
+  margin: 2px 0 0 10px;
+  font-weight: bold;
+  display:block;
+  position: absolute;
+  left:0;
+  top:2px\9;  /*ie7 & ie8 8 ugly hack thanx to FF FF goes nuts of theres a top:0; so to correct that we have to add a selector for ie8*/
+  /* font-weight:normal; text-transform: uppercase; */
+  /* font-size:10px; line-height:20px; */
+  /* background-color:#999; */
+}
+
+html.js fieldset.collapsible legend a span{background: url(/sites/default/files/color/ndpc_garland-e2a849c9/menu-expanded.gif) no-repeat left 3px; padding:0 0 0 20px;}
+html.js fieldset.collapsed legend a span{display:block; background: url(/sites/default/files/color/ndpc_garland-e2a849c9/menu-collapsed.gif) no-repeat left 3px; cursor: pointer; padding:0 0 0 20px; }
+html.js fieldset.collapsed legend span{padding:0 0 0 10px; margin: 2px 0 0 10px; }
+html.js fieldset.collapsed{margin:0 0 10px 0; padding:10px 0 5px 0; border: solid #ebebf9; border-width: 0 1px 1px 1px; }
+
+html.js fieldset.collapsible .fieldset-wrapper {overflow: hidden;}
+/* html.js input.form-autocomplete{background-position: 100% 7px;} */
+/* html.js input.throbbing{background-position:100% -18px;} */
+
+/*
+.vertical-tabs,
+.vertical-tabs-panes fieldset{background:#fff;}
+*/
+
+/*********** conferences block stuff *************************/
+/*************************************************************/
+
+#block-views-conferences_short-block_1 div.view {
+	padding-left: 3px;
+}
+#block-views-conferences_short-block_1 div.content {
+  margin: 0;
+	padding: 0;
+}
+#block-views-conferences_short-block_1 div.node {
+  margin: 0;
+  padding: 0 0 4px 0;
+}
+#block-views-conferences_short-block_1 div.node h2 {
+  font: 12px/170% Verdana, sans-serif;
+  color: #494949;
+  font-weight: bold;
+  margin: 0;
+  padding: 0; 	
+}
+#block-views-conferences_short-block_1 div.node h6 {
+  font: 12px/170% Verdana, sans-serif;
+  color: #494949;
+  line-height: 1.5em;
+  margin: 0;
+  padding: 0; 	
+}
+
+div.view-conferences div.view-content div.views-row {
+  margin: 1em 0;
+  padding: 1em;
+  border: 1px solid #d9eaf5;
+  background: #fff url(images/gradient-inner.png) repeat-x 0 0;
+}
+
+/*********** fix for fieldsets *******************************/
+/*************************************************************/
+
+
+html fieldset {
+   /* background: none; */
+    border: solid #ebebf9;
+    border-width: 0 1px 1px 1px; 
+}
+
+/*
+fieldset
+{
+  padding:0 10px 10px 10px;
+  background: none;
+  border:none;
+}
+
+.fieldset-outer {
+  border: 1px solid #ebebf9;
+  background: #fff url(/sites/default/files/color/ndpc_garland-e2a849c9/gradient-inner.png) repeat-x 0 0;
+  overflow:visible;
+  margin-bottom:10px;
+  margin-top:10px;
+  clear:both;
+}
+*/
+
+/*********** all finder form stuff ***************************/
+/*************************************************************/
+
+div.finder-form input.form-submit {
+	background: #dedeed url(../../../../images/button.gif);
+  border:1px solid;	
+  border-top-color:#dedeed;
+  border-left-color:#bdbddb;
+  border-right-color:#9999cc;
+  border-bottom-color:#666699;
+  padding: 3px;
+  color: #363663;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+/*********** proven practices finder form stuff **************/
+/*************************************************************/
+
+#finder-form-3 {
+  display: block;
+}
+
+div.finder-3 div.form-item {
+  float: left;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+/*********** advanced resource library finder form stuff *****/
+/*************************************************************/
+
+div.finder-2 div.finder-form-2-float {
+  float: left;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#edit-3-wrapper {
+  float: left;
+  width: 300px;
+}
+
+#edit-4-wrapper {
+  float: left;
+  width: 250px;  
+}
+
+/*********** modelprograms stuff *****************************/
+/*************************************************************/
+
+.ndpcutilityint {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:.9em;
+	font-weight: normal;
+	color:#000;
+	vertical-align: top;
+	line-height: 1em;
+}
+.notice_color {
+  color: #008B00;
+  font-weight: bold;
+}
+.formbox {
+	height: auto;
+	border: 1px solid #8cb2d9;
+	width: 560px;
+	background-color:#F0F8FF;
+	margin-top: 10px;
+	margin-bottom:10px;
+	padding: 10px;
+}
+.formbox h3 {
+	color:#336699;  
+}
+.formbox table {
+	width: 560px;  
+}
+.formbox th {
+  text-align:left; 
+  background-color: #C6E2FF;
+}
+.formbox td {
+  vertical-align: top;
+}
+.formbox div.unhighlightBox {
+	color:#336699;  
+  cursor: pointer;	
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 120%;
+	font-weight:bold;
+	margin-top:0;
+	margin-bottom:0px;	
+}
+.formbox div.highlightBox {
+	color:#00B2EE;  
+  cursor: pointer;	
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 120%;
+	font-weight:bold;
+	margin-top:0;
+	margin-bottom:0px;	
+}
+div.maximized {
+  display: block;
+}
+div.minimized {
+  display: none;
+}
+
+.forminput {
+	border: 1px solid #363663;
+	background: url(../../../../images/form_input_gradient.gif) repeat-x #FFFFFF;
+	font-family: Arial, Helvetica, sans-serif;
+	font-style: normal;
+	font-size: .9em; 
+	line-height: 1em;
+	color: #454743;
+}
+
+.formlabel {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: .9em;
+	color: #363663;
+	text-align: left;
+}
+
+.formlabel_sub {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: .9em;
+	text-align: left;
+	color: #000;	
+}
+
+
+.formbutton {
+	background: #dedeed url(../../../../images/button.gif);
+  border:1px solid;	
+  border-top-color:#dedeed;
+  border-left-color:#bdbddb;
+  border-right-color:#9999cc;
+  border-bottom-color:#666699;
+  padding: 3px;
+  color: #363663;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-weight: bold;
+ /* display: block; */
+}
+
+.normal_box {
+	height: auto;
+	border: 1px solid #bdbddb;
+	width: 560px;
+	background-color:#fff;
+	background: url(../../../../images/gradient_vert_lavender.gif) repeat-x;	
+	margin-top: 10px;
+	margin-bottom:10px;
+	padding: 10px;
+}
+.normal_box h3 {
+  color: #7a78ab;
+}
+.normal_box table {
+	width: 560px;  
+	margin-top: 5px;
+	margin-bottom:5px;
+	border: 0;
+}
+.normal_box th {
+  text-align:left; 
+  font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;  
+	font-size:.9em;
+  line-height: 1em;
+	color:#000;
+	vertical-align: top;  
+	border: none;
+	padding: 3px;
+}
+.normal_box tr {
+	border: none;
+}
+.normal_box td {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:.9em;
+	font-weight: normal;
+	line-height: 1.2em;
+	color:#000;
+	vertical-align: top;
+	border: none;	
+	padding: 3px;
+}
+.info_box {
+	height: auto;
+	border: 1px solid #ffd700;
+	width: auto;
+	background-color:#fff;
+  background: url(../../../../images/gradient_vert_yellow.gif) repeat-x;
+	margin-top: 10px;
+	margin-bottom:10px;
+	padding: 10px;
+}
+.info_box h3 {
+  color: #FFA500;
+}
+
+div.maximized {
+  display: block;
+}
+div.minimized {
+  display: none;
+}
+
+.resultbox {
+	height: auto;
+	border: 1px solid #bdbddb;
+	width: 560px;
+	background-color:#F5F5FF;
+	margin-top: 10px;
+	margin-bottom:10px;
+	padding: 10px;
+}
+.resultbox h3 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:1em;
+	color:#7a78ab;  
+}
+.resultbox table {
+	width: 560px;  
+	margin-top: 3px;	
+	border: 0;
+}
+.resultbox th {
+	font-family: Arial, Helvetica, sans-serif;
+  text-align:left; 
+  font-weight: bold;
+	font-size:.9em;
+	color:#000;
+	vertical-align: top;  
+	border: 0;
+	padding: 0;
+}
+.resultbox tr {
+	border: none;
+}
+.resultbox td {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:.9em;
+	font-weight: normal;
+	color:#000;
+	vertical-align: top;
+	line-height: 1.2em;
+	border: none;
+	padding: 3px;	
+}
+
+div.tablebox {
+	height: auto;
+	width: auto;
+	margin-top: 5px;
+	margin-bottom:10px;
+	padding: 0px;
+}
+table.tableboxed {
+	width: 560px;  
+}
+table.tableboxed h3 {
+		font-size: 1em;
+	font-family: Arial, Helvetica, sans-serif;
+	color:#666699;  
+}
+table.tableboxed h4 {
+	color:#363636;  
+		font-size: 1em;
+	font-family: Arial, Helvetica, sans-serif;
+}
+table.tableboxed th {
+  text-align:left; 
+  border-bottom: 1px solid #bdbddb;
+}
+table.tableboxed td {
+  vertical-align: top;
+}
+table.tableboxed ul {
+
+  margin-top: 0px; 
+  margin-bottom: 6px;
+
+}
+table.tableboxed li {
+  margin-top: 0px; 
+  margin-bottom: 0px;
+
+}
+table.tableboxedsub {
+	width: 545px; 
+}
+
+/***** webcast views stuff *********************/
+div.view-attach-biblios-to-webcast div.biblio-entry {
+  margin: 0;
+}
+
+/************** webcast stuff ******************/
+/***********************************************/
+.fancylist ul {
+  border-top: 1px solid #bdbddb;
+  border-bottom: 1px solid #bdbddb;  
+} 
+.li_desc {
+   display: block; 
+}
+
+#webcast_box {
+  text-align: left;
+	vertical-align: top; 
+	float: right;
+	clear: right; 
+	height: auto;		
+	margin-left:15px;	
+	margin-bottom: 5px;
+	margin-top: 5px;
+	padding: 3px;
+	color: #363636;
+	border:1px solid #ffd700;	
+  width: 240px; 
+	background-color: #f5f5ff;
+  background: url(../../../../images/gradient_vert_yellow.gif) repeat-x;
+	background-position: top left;
+}
+#webcast_box a{
+	color:#0042b7; 
+}
+#webcast_box a:link, #webcast_box a:active {
+	color: #0042b7;
+}
+#webcast_box td {
+  list-style-type: none;
+  padding: 2px;
+	color: #363636;  
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size: 1em; 
+	line-height: 1em; 	
+	font-weight: bold;	
+}
+#webcast_box h1 {
+  text-align: left;
+  margin: 3px;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size: 1em; 
+	line-height: 1em; 
+  font-weight: bold;	
+  color: #FFA500;
+	padding: 0;
+
+}
+#webcast_box tr {
+  text-indent: 0px;	
+	padding: 0;
+
+}
+#webcast_info {
+  height: 120px;
+  margin: 20px 0px 10px 0px;
+  display: block;
+}
+#webcast_info td {
+  vertical-align: top;
+  padding: 2px;
+
+}
+.webcast_person {
+	float:right;
+	height: auto;
+	/* border: 1px solid #8cb2d9; */
+	width:13.5em;
+	margin-left:10px;
+	/* background-color:#d9e6f2; */
+	/* background: url(../../../../images/gradient_vert_blue_500.gif) repeat-x;	*/
+	margin-top: 10px;
+	margin-bottom:10px;
+	padding: 10px 10px 0px 10px;
+  border: 1px solid #d9eaf5;
+  background: #fff url(images/gradient-inner.png) repeat-x 0 0;	
+}
+.webcast_person img {
+	border:1px solid #8cb2d9;
+}
+.webcast_person p.bio {
+	font-size:.9em;
+	line-height: 120%; 		
+	color:#000;  
+  margin-top: 0px;
+/*  text-align: justify; 
+  text-justify: newspaper; */
+}
+h3.name {
+  text-align: left;	
+	font-size: .9em;
+  margin-top: 0px; 
+  margin-bottom: 0px; 
+	padding: 0px 0px 0px 0px;  
+}
+.webcast_person em {
+	font-weight: bold;
+
+}
+
+
+.webcast_desc {
+  float: left; 
+  width: 32em; 
+}
+.webcast_resources ul {
+  /* font-size:.7em; */
+ /*  margin-top: 5px; */	
+
+}
+.webcast_resources a {
+	font-weight: bold;
+}
+
+.webcast_resources_url {
+  font-weight: bold;
+}
+
+.webcast_resources_book {
+  font-weight: bold;
+  font-style: italic;
+}
+
+.webcast_email {
+   margin-top: 3em;
+   display: block; 
+}
+/************** footer stuff *******************/
+/***********************************************/
+
+#footer {
+	background: url(footer_bg.gif) bottom right no-repeat;
+  margin: 0;
+}
+#footerint {
+	clear: both;
+  display: block;
+	width:auto;
+	height:170px;
+}
+.footer-links {
+  font-family: arial, verdana, geneva, helvetica, sans-serif;	
+	font-size:.9em;
+	line-height: 1.4em;
+}
+.footertext {
+  float: left;
+  font-family: arial, verdana, geneva, helvetica, sans-serif;	
+	text-align:left;
+	padding-left:55px;
+	padding-top: 10px;
+	width:300px;
+	height:160px;	
+	font-size:.9em;
+	line-height: 1.4em;
+	color: #494949;
+	background: url(footer_text_bg.gif) bottom left no-repeat;
+}
+.validateint {
+	float:left;
+	width:100px;
+	margin:10px 0 0 0;
+}
+.footerright {
+  float:right;
+  font-family: arial, verdana, geneva, helvetica, sans-serif;	
+	text-align:left;
+	padding-top: 10px;
+	font-size:.9em;
+	line-height: 1.4em;
+	color: #494949;	
+	/* width:346px; */
+  width: 330px;
+}
