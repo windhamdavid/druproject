@@ -6,9 +6,9 @@ core = 6.x
 engine = phptemplate
 screenshot = img/screenshot.png
 
-stylesheets[all][] = style.css
-stylesheets[all][] = grid.css
-stylesheets[print][] = print.css
+stylesheets[all][] = css/style.css
+stylesheets[all][] = css/grid.css
+stylesheets[print][] = css/print.css
 
 scripts[] = js/init.js
 
