@@ -1,21 +1,27 @@
 <?php
 // $Id$
 
-/**
- * Helper function to allow easy CSS excludes + includes
- */
-function phptemplate_get_css($exclude = array(), $include = array()) {
- $css = drupal_add_css();
- foreach ($css['all']['module'] as $k => $path) {
-   $file = substr($k, strrpos($k, '/') + 1);
-   if (in_array($file, $exclude)) {
-     unset($css['all']['module'][$k]);
-   }
- }
- foreach ($include as $file) {
-   $css['all']['module'][path_to_theme() .'/'. $file] = true;
- }
- return drupal_get_css($css);
+function _phptemplate_variables($hook, $vars = array()) {
+
+	/**
+	* Disable all core css for anonymous users, loading theme css ONLY
+	* if a user is logged in, render css as normal - mostly for admins (do we even need this?)
+	*/
+	
+	if (is_array($vars['css']['all']['module']) && $user->uid == 0) { // if user is not logged in
+		$vars['css']['all']['module'] = array(); // empty core css array
+	}
+	$vars['styles'] = drupal_get_css($vars['css']); // add only theme css styles
+	
+      // include these modules
+      //$modules_to_include = 'service_links';
+      //if (module_exists($modules_to_include)) {
+      //  $vars['service_links'] = theme('links', service_links_render($vars['node'], TRUE));
+      //}
+
+  return $vars; // final output for _phptemplate_variables
+  
+}
 
 
 /**
