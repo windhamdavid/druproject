@@ -1,0 +1,16 @@
+name = "Migrate UI"
+description = "UI for managing migration processes"
+package = "Development"
+;configure = admin/config/development/migrate
+core = 6.x
+php = 5.2
+dependencies[] = migrate
+files[] = migrate_ui.module
+;files[] = migrate_ui.pages.inc
+
+; Information added by drupal.org packaging script on 2011-03-10
+version = "6.x-2.0"
+core = "6.x"
+project = "migrate"
+datestamp = "1299794169"
+

@@ -1,0 +1,110 @@
+
+Migrate 2.0
+===========
+No changes since RC3.
+
+Migrate 2.0 Release Candidate 3
+===============================
+
+Features and enhancements
+  Added JSON source plugin.
+  CSV source backported from D7.
+
+Bug fixes
+- #940984 - Avoid user insert errors on some MySQL versions.
+- #1079416 - postRollback called outside of rollback operation.
+- #1079438 - Simpletest notices on D6.
+- #1063926 - prepareRow() call missing from MigrateSourceList.
+- #1061284 - Appropriately translate watchdog severities to migrate severities.
+
+Migrate 2.0 Release Candidate 2
+===============================
+
+Bug fixes
+- #1058942 - Flush cache on enable to make sure classes get registered.
+- migrate_example error when auto_nodetitle module not present.
+- #1053798 - Missing 'debug' on showMessage.
+
+Migrate 2.0 Release Candidate 1
+===============================
+
+Features and enhancements
+- #919108 - Add deleteDestination() for maps; cache migration list.
+- #996086 - Add prepareRollback and completeRollback methods for entities.
+- #1039882 - Pass client migration to stub creation. Note that $migration->values
+  (the destination object being built) is now $migration->destinationValues - any
+  migrations referencing this member will need to change.
+- #946350 - Accept arrays in sourceMigration();
+Moved filefield support from migrate_extras to migrate, for consistency with D7.
+Let a node migration set node_revisions.uid. Thats the 'last edited by' user
+
+Bug fixes
+- #1053798 - Consistent use of error codes.
+- #1053526 - Machine names in drush commands now case-insensitive.
+- #919706 - Fix drush migrate-descriptions command.
+- #1027468 - Limit map/message table name lengths.
+- #1045646 - Handle PHP memory_limit of -1.
+- #1050348 - Check map table existence in correct DB.
+- #1028824 - Errors during registry rebuild trigger fatal error.
+Fix highwater handling to deal with duplicate values.
+- #990640 - Help people trying to upgrade from Migrate V1.
+- #998586 - Improved feedback for disabled migrations.
+- #972382 - Fix MigrateDestinationTableCopy.
+- #962120 - Support idlist on rollback.
+- #1017744 - Term references need to be explicitly added to fields list; example
+    needs to use vocabulary name (no machine name in D6).
+- #1017256 - Document case-sensitivity in beer.inc.
+- #1013844 - Better error handling in getInstance().
+
+Migrate 2.0 Beta 3
+==================
+Features and enhancements
+
+- #989200 - Support "dynamic" migrations. Changes to be aware of:
+  All modules implementing migration classes must now implement hook_migrate_api()
+    (see migrate_migrate_api() for an example).
+  Dependencies and sourceMigrations must now be expressed in terms of 
+    machine name rather than class name.
+  MigrationBase::getInstance now takes a machine name rather than a class name. 
+  Migration class names are no longer required to end in 'Migration'.
+- #992898 - Pass options to source and destination constructors as arrays.
+Add logging of fetch queries and dqp() function to translate DBTNG query object into full SQL.
+Inherit default settings for promote, sticky, status, status from content type 
+  configuration. Already done in D7.
+Add arguments method for MigrateTermNodeHandler class
+Add dedupe() method for a field mapping.
+maintainStatistics business removed from comment import.
+Default comments to published status
+
+Bug fixes
+
+- #1004992 - Double call to prepare() on comment import (systemOfRecord DESTINATION)
+- #1006272 - Remove lengths on int fields in schema (breaks Postgres)
+- #1005030 - Replace eval() with proper call_user_func().
+- #1005360 - Skip .test files in registry scan
+- #1002500 - Remove conflicting comment_load() wrapper.
+- #1004268 - Don't munge date separators
+prepareRow() skips current row only if boolean FALSE is returned.
+Avoid notice in user.inc
+- #990960 - Initialize fields array for profiles
+- #839770 - Notice: Undefined property: stdClass:: in forum_node_presave() when 
+  generating forum nodes.
+- #984294 - Make migrate dashbard a local task.
+needs_update => needs-update to match drush conventions.
+Inherit default settings for promote, sticky, status, status from content type 
+  configuration. Already done in D7.
+- #898622 - Undefined variable in MigrateDestinationNode::import()
+- #839770 - Notice: Undefined property: stdClass:: in forum_node_presave() when 
+  generating forum nodes.
+- #990960 - Initialize fields array for profiles
+- #983968 - Bogus settings of ->uid
+
+Migrate 2.0 Beta 2
+==================
+Bug fixes
+- #940984 - Migrate Example BeerUser is broken -- tries to insert '' into users.uid
+
+Migrate 2.0 Beta 1
+==================
+Version 2 of the Migrate module is an entirely new implementation - it is 
+pointless to list changes since Migrate 1.
