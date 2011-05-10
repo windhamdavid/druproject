@@ -2,6 +2,23 @@
 // $Id$
 
 /**
+ * Helper function to allow easy CSS excludes + includes
+ */
+function phptemplate_get_css($exclude = array(), $include = array()) {
+ $css = drupal_add_css();
+ foreach ($css['all']['module'] as $k => $path) {
+   $file = substr($k, strrpos($k, '/') + 1);
+   if (in_array($file, $exclude)) {
+     unset($css['all']['module'][$k]);
+   }
+ }
+ foreach ($include as $file) {
+   $css['all']['module'][path_to_theme() .'/'. $file] = true;
+ }
+ return drupal_get_css($css);
+
+
+/**
  * Sets the body-tag class attribute.
  *
  * Adds 'sidebar-left', 'sidebar-right' or 'sidebars' classes as needed.
