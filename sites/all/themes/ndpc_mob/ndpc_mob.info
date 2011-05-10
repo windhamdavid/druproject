@@ -1,5 +1,5 @@
-name = NDPC 5 
-description = html5 version
+name = NDPC mobile
+description = mobile version
 
 core = 6.x
 engine = phptemplate
