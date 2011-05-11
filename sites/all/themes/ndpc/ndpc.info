@@ -1,7 +1,6 @@
-name = ndpc
-description = Tableless, recolorable, multi-column, fluid width theme (based on Garland).
+name = NDPC
+description = undefined
 
-version = VERSION
 core = 6.x
 engine = phptemplate
 screenshot = img/screenshot.png
